@@ -1,2 +1,22 @@
 # chromatin_tools
 A suite of stand-alone Perl scripts for creating and processing Kent Lab MNase-seq/CPSA data
+
+Rather than write huge app-like structures, Nick tends to write short scripts which perform single tasks. This modularity is designed to get you to think about the principle of the pipeline. You can, of course, write your own wrapper shell script to force the data from .fastq -> bedGraph if you want.
+
+1. You should open each script with a code editor before use. This will allow you to read the comment header, which describes what the script does and what input and output to expect. You will also have the opportunity to set some variables; instead of taking values from @ARGV and using command line flags, these Perl scripts force you to set variables by opening the actual script and editing it. The idea here is to get students to view the code...and ultimately to learn to write it better than Nick does. The other reason for doing this is because Nick wants to get a functioning script ASAP without arsing around writing all the @ARGV handling and --help text you'd normally expect with SPades or whatever. Once you have edited the script, remember to Save.
+
+2. You should place each script in its own working directory to keep your data and mind tidy. Check the explcit paths in the script. Many of them are set to take input files from one folder and deposit outputs in another (check the variables!); you will need to create, and correctly name, these folders manually in your current working directory (cwd) before running the script for the first time.
+
+Kent Lab Software Disclaimer:
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+
+IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO: PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE OF
+DATA, LOSS OF PROFITS; BUSINESS INTERRUPTION; DEGREE FLUNKING; LAUNCH OF 
+STRATEGIC NUCLEAR WEAPONS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE, 
+IGNORANCE, RANK INSANITY OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
