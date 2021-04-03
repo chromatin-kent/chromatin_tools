@@ -1,7 +1,7 @@
 # chromatin_tools
 A suite of stand-alone Perl scripts for creating and processing Kent Lab MNase-seq/CPSA data
 
-Rather than write huge app-like structures, Nick tends to write short scripts which perform single tasks. This modularity is designed to get you to think about the principle of the pipeline. You can, of course, write your own wrapper shell script to force the data from .fastq -> bedGraph if you want.
+Rather than write huge app-like structures, Nick tends to write short scripts which perform single tasks. This modularity is designed to get you to think about the principle of the pipeline by inspecting the intermediate data as you go. You can, of course, write your own wrapper shell script to force the data from .fastq -> bedGraph if you want.
 
 1. You should open each script with a code editor before use. This will allow you to read the comment header, which describes what the script does and what input and output to expect. You will also have the opportunity to set some variables; instead of taking values from @ARGV and using command line flags, these Perl scripts force you to set variables by opening the actual script and editing it. The idea here is to get students to view the code...and ultimately to learn to write it better than Nick does. The other reason for doing this is because Nick wants to get a functioning script ASAP without arsing around writing all the @ARGV handling and --help text you'd normally expect with SPades or whatever. Once you have edited the script, remember to Save.
 
