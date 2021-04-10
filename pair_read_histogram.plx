@@ -3,6 +3,7 @@
 # Fiddled with: Nick Kent, Oct 2016
 # Fiddled with: Nick Kent, Nov 2018 - removed stupid ID flag logic
 # Fiddled with: Nick Kent, Oct 2019 - use Cwd
+# Fiddled with: Nick Kent, Apr 2021 - tidy commenting
 #
 # USAGE:- perl pair_read_histogram.plx
 #
@@ -24,12 +25,11 @@ use warnings;
 use Math::Round;
 use Cwd;
 ################################################################################
-# SET THE 3 VARIABLES BELOW AS REQUIRED
-# $indir_path   - The directory containing the .txt files to be processed
-# $outdir_path  - The directory to store the .sgr output files
+# SET THE VARIABLES BELOW AS REQUIRED
+# $indir_path   - The directory containing the .SAM file(s) to be processed
+# $outdir_path  - The directory to store the output file(s)
 # $top		- The upper ISIZE boundary
 # $bin_width    - The histogram bin width value in bp
-# $SAM_id_flag 	- The Illumina Flowcell ID number, or a unique substring
 ################################################################################
 
 my $inA_indir_path =cwd."/in";
